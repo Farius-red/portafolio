@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
+import { IndexPortafolioComponent } from './componentes/index/index-portafolio.component';
 
 
-const routes: Routes = [{ path: '', component: NavegacionComponent }];
+
+const routes: Routes = [{ path: '', component: IndexPortafolioComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

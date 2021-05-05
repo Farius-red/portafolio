@@ -3,13 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { IndexPortafolioRoutingModule } from './index-portafolio-routing.module';
 import { IndexPortafolioComponent } from './componentes/index/index-portafolio.component';
-import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
+
 import { MaterialModule } from '../material/material.module';
+import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { CuerpoComponent } from './componentes/cuerpo/cuerpo.component';
+import { PortafolioComponent } from './componentes/portafolio/portafolio.component';
+
 
 @NgModule({
-  declarations: [IndexPortafolioComponent, NavegacionComponent],
-  imports: [CommonModule, IndexPortafolioRoutingModule, MaterialModule],
-  exports: [IndexPortafolioComponent, NavegacionComponent],
+  declarations: [IndexPortafolioComponent, NavegacionComponent, FooterComponent, CuerpoComponent, PortafolioComponent],
+  imports: [
+    CommonModule,
+    IndexPortafolioRoutingModule,
+    MaterialModule,
+  ],
+  exports: []
 })
-
-export class IndexPortafolioModule { }
+export class IndexPortafolioModule {}
